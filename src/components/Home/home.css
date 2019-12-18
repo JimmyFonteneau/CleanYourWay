@@ -1,0 +1,9 @@
+.mdl-textfield__label {
+    color: black !important;
+  }
+
+  a {   
+    text-decoration: none; /* no underline */
+    color: black;
+  }
+
