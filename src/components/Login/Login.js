@@ -29,7 +29,7 @@ function Login() {
 
         <Button  style={{ backgroundColor: 'white' }}      
         >         
-          <Link to="/login">Login</Link>
+          <Link to="/app">Login</Link>
         </Button>
 
   </div>      
