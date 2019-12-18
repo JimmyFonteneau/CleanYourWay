@@ -18,7 +18,6 @@ const routing = (
             <Menu>
             <Route exact path="/app" component={App} />                   
                     {/* <Route component={Notfound} /> */}                
-            <Footer />
             </Menu>
             </Switch>
         </div>
