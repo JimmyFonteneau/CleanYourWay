@@ -5,10 +5,10 @@ import 'react-mdl/extra/material.js';
 import {Content, Drawer, Header, Layout, Navigation} from "react-mdl";
 
 
-function Menu() {
+function Menu(props) {
   return (
 
-      <div style={{height: '300px', position: 'relative'}}>
+      <div style={{height: '100vh', position: 'relative'}}>
           <Layout fixedHeader>
               <Header title={<strong>The Title</strong>}>
 
@@ -22,7 +22,9 @@ function Menu() {
                   </Navigation>
               </Drawer>
 
-              <Content />
+              <Content>
+                  {props.children}
+              </Content>
           </Layout>
       </div>
   );

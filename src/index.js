@@ -4,18 +4,25 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
+import Menu from "./components/Menu/Menu";
 
 const routing = (
     <Router>
-      <div>                
-        <Switch>
-          <Route exact path="/" component={App} />        
-          {/* <Route component={Notfound} /> */}
-        </Switch>
-        {/* <Footer /> */}
-      </div>
+        <div>
+            <Menu>
+                <Switch>
+                    <Route exact path="/" component={App} />
+                    {/* <Route component={Notfound} /> */}
+                </Switch>
+
+                <Footer />
+
+            </Menu>
+
+        </div>
     </Router>
-  );
+);
 
 ReactDOM.render(routing, document.getElementById('root'));
 

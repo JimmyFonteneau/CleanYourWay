@@ -8,7 +8,7 @@ import {Icon, Tab, Tabs} from "react-mdl";
 function Footer() {
   return (
 
-      <div style={{height: '300px', position: 'relative'}}>
+      <div style={{position: 'relative'}}>
               <Tabs
                   value={1}
                   onChange={() => {console.log("clicked on bottom menu")}}
@@ -16,10 +16,14 @@ function Footer() {
                   indicatorColor="secondary"
                   textColor="secondary"
                   aria-label="icon label tabs example"
+                  style={{width: '100vw'}}
               >
-                  <Tab icon={<Icon>Home</Icon>} label="RECENTS" />
-                  <Tab icon={<Icon>star</Icon>} label="FAVORITES" />
-                  <Tab icon={<Icon></Icon>} label="NEARBY" />
+                  <Tab                   style={{width: '33vw'}}
+                                         icon={<Icon>Home</Icon>} label="RECENTS" />
+                  <Tab                   style={{width: '33vw'}}
+                                         icon={<Icon>star</Icon>} label="FAVORITES" />
+                  <Tab                   style={{width: '33vw'}}
+                                         icon={<Icon></Icon>} label="NEARBY" />
               </Tabs>
       </div>
   );
