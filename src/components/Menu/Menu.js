@@ -13,6 +13,7 @@ function Menu(props) {
               <Header title={<strong>The Title</strong>}>
 
               </Header>
+
               <Drawer title="Title">
                   <Navigation>
                       <a href="">Link</a>
