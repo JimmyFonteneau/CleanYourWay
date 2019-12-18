@@ -3,34 +3,37 @@ import React from 'react';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import {Content, Drawer, Header, Layout, Navigation} from "react-mdl";
+import { Link } from "react-router-dom";
+
 import MobilityWay from "../MobilityWay/MobilityWay";
 
 
-function Menu(props) {
-    return (
+class Menu extends React.Component {
 
-        <div style={{height: '100vh', position: 'relative'}}>
-            <Layout fixedHeader>
-                <Header title={<strong>The Title</strong>}>
+    hideToggle() {
+        var selectorId = document.querySelector('.mdl-layout');
+        selectorId.MaterialLayout.toggleDrawer();
+    }
 
-                </Header>
+    render() {
+        return (
 
-                <Drawer title="Title">
-                    <Navigation>
-                        <a href="">Link</a>
-                        <a href="#">Link</a>
-                        <a href="#">Link</a>
-                        <a href="#">Link</a>
-                    </Navigation>
-                </Drawer>
+            <div style={{height: '100vh', position: 'relative'}}>
+                <Layout fixedDrawer>
+                    <Drawer title="Title">
+                        <Navigation>
+                        <Link to="/savings" onClick={() => this.hideToggle()}>Mes économies</Link>
+                        </Navigation>
+                    </Drawer>
 
-                <Content>
-                    <MobilityWay></MobilityWay>
-                    {props.children}
-                </Content>
-            </Layout>
-        </div>
-    );
+                    <Content>
+                        {this.props.children}
+                    </Content>
+                </Layout>
+            </div>
+        );
+    }
+
 }
 
 export default Menu;
