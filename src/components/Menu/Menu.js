@@ -27,6 +27,7 @@ class Menu extends React.Component {
                     </Drawer>
 
                     <Content>
+                        <MobilityWay/>
                         {this.props.children}
                     </Content>
                 </Layout>

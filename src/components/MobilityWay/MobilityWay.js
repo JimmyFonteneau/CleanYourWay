@@ -12,6 +12,7 @@ import Car from '../../car.png';
 import Walk from '../../walk.png';
 import Bus from '../../bus.png';
 import ButtonWithImage from "../ButtonWithImage/ButtonWithImage";
+import UsersService from "../../services/UsersService";
 
 
 function handleOnCLickButton(event){
@@ -20,9 +21,16 @@ function handleOnCLickButton(event){
 
 }
 
+function loadUsers(){
+    UsersService.getUser(1).then(res => console.log(res));
+}
+
 function MobilityWay(props) {
     return (
         <React.Fragment>
+
+            {loadUsers()}
+
             <Grid
                 style={{
                     display: 'flex',
