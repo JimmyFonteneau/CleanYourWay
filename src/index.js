@@ -12,13 +12,13 @@ import Login from './components/Login/Login';
 const routing = (
     <Router>
         <div>
-        <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/login" component={Login} />
-            <Menu>
-            <Route exact path="/app" component={App} />                   
-                    {/* <Route component={Notfound} /> */}                
-            </Menu>
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/login" component={Login} />
+                <Menu>
+                    <Route exact path="/app" component={App} />
+                    {/* <Route component={Notfound} /> */}
+                </Menu>
             </Switch>
         </div>
     </Router>
