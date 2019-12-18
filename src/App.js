@@ -3,29 +3,32 @@ import logo from './logo.svg';
 import './App.css';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
-import Menu from "./components/Menu/Menu";
-import Footer from "./components/Footer/Footer";
+import { Button, Textfield } from 'react-mdl';
+import bck from './homeBackground.jpg';
 
 function App() {
   return (
     <div className="App">
-        <Menu/>
-
-        <header className="App-header">
+      <body  className="App-body" style={{ display: 'flex', backgroundImage: `url(${bck})`, backgroundSize: 'cover' }}>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-        <Footer></Footer>
+
+        <Textfield
+          onChange={() => { }}
+          label="Email"
+          floatingLabel
+          style={{ width: '200px' }}
+        />
+
+        <Textfield
+          onChange={() => { }}
+          label="Mot de passe"
+          floatingLabel
+          style={{ width: '200px' }}
+        />
+        <Button  style={{ backgroundColor: 'white' }}>
+          Se connecter
+        </Button>
+      </body>
     </div>
   );
 }
