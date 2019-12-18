@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import Footer from "./components/Footer/Footer";
 import Menu from "./components/Menu/Menu";
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
