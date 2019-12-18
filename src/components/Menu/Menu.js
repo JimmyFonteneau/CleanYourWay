@@ -3,7 +3,7 @@ import React from 'react';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import {Content, Drawer, Header, Layout, Navigation} from "react-mdl";
-
+import { Link } from "react-router-dom";
 
 function Menu(props) {
   return (
@@ -16,10 +16,7 @@ function Menu(props) {
 
               <Drawer title="Title">
                   <Navigation>
-                      <a href="">Link</a>
-                      <a href="#">Link</a>
-                      <a href="#">Link</a>
-                      <a href="#">Link</a>
+                  <Link to="/savings">Mes économies</Link>
                   </Navigation>
               </Drawer>
 

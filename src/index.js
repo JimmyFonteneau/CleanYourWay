@@ -7,6 +7,8 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Menu from "./components/Menu/Menu";
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
+import Savings from './components/Savings/Savings';
+import Notfound from './components/NotFound/NotFound';
 
 const routing = (
     <Router>
@@ -15,8 +17,9 @@ const routing = (
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={Login} />
             <Menu>
-            <Route exact path="/app" component={App} />                   
-                    {/* <Route component={Notfound} /> */}                
+            <Route exact path="/app" component={App} /> 
+            <Route exact path="/savings" component={Savings} />                   
+            <Route component={Notfound} />                
             </Menu>
             </Switch>
         </div>
