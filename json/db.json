@@ -5,7 +5,7 @@
       "firstName": "Yan",
       "lastName": "Garnier",
       "email": "yangarnier@gmail.com",
-      "password": "Anger$789"
+      "password": "Anger$789",
       "address": {
         "home": "Mairie Montreuil-Juigné",
         "work": "MyDigitalSchool"

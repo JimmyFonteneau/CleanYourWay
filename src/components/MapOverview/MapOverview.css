@@ -2,11 +2,13 @@
     display: flex;
     align-items: center;
     justify-items: center;
-    height: 60vh;
-    width: 80vw;
+    height: 50vh;
+    width: 70vw;
+    padding: 13%;
 }
 
 .gmap_canvas {
-    overflow: hidden;
+    height: 100%;
+    width: 100%;
 }
 

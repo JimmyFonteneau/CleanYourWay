@@ -12,23 +12,23 @@ const buttonStyles = {
     display: "flex",
     borderRadius: '150px',
     backgroundColor: 'green',
-    height: '150px',
-    width: '150px',
+    height: '50px',
+    width: '50px',
     alignItems: 'center',
     justifyContent: 'center',
-    cursor: "pointer",
+    // cursor: "pointer",
     margin: "5px",
 
 };
 
 const imageStyles = {
 
-    height: '100px',
-    width: '100px',
+    height: '30px',
+    width: '30px',
 };
 
 
-function ButtonWithImage({styles, src = "home", callback, id}) {
+function ButtonWithImage({styles, src, callback, id}) {
 
     let myButtonStyles = {...buttonStyles, ...styles};
 
