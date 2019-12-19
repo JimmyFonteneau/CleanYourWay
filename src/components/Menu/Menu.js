@@ -5,9 +5,6 @@ import 'react-mdl/extra/material.js';
 import {Content, Drawer, Header, Layout, Navigation} from "react-mdl";
 import { Link } from "react-router-dom";
 
-import MobilityWay from "../MobilityWay/MobilityWay";
-
-
 class Menu extends React.Component {
 
     hideToggle() {
@@ -27,8 +24,7 @@ class Menu extends React.Component {
                         </Navigation>
                     </Drawer>
 
-                    <Content>
-                        <MobilityWay/>
+                    <Content>                     
                         {this.props.children}
                     </Content>
                 </Layout>
