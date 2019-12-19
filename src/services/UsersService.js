@@ -13,6 +13,12 @@ class UsersService {
     static getUser(id){
         return instance.get('/users/' + id);
     }
+    static createUser(user){
+        return instance.post('/user', user);
+    }
+    static getUserByEmailAndPassword(email, password) {
+        return instance.get('/users?email=' + email + '&password=' + password);
+    }
 
 
 

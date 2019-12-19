@@ -1,8 +1,7 @@
 {
   "users": [
-    { "id": 1, "firstName": "Yan", "lastName": "Garnier", "mail": "yangarnier@gmail.com", "password": "Anger$789" },
-    { "id": 2, "firstName": "Nicolas", "lastName": "Jousset", "mail": "joussetn49@gmail.com", "password": "Anger$789" },
-    { "id": 3, "firstName": "Yan3", "lastName": "Garnier", "mail": "yangarnier@gmail.com", "password": "Anger$789" }
+    { "id": 1, "firstName": "Yan", "lastName": "Garnier", "email": "yangarnier@gmail.com", "password": "Anger$789" },
+    { "id": 2, "firstName": "Nicolas", "lastName": "Jousset", "email": "joussetn49@gmail.com", "password": "Anger$789" }
   ],
   "travels": [
     { "id": 1, "from": "Mairie Montreuil-Juigné", "to": "MyDigitalSchool", "carbonEmitted": "120", "price":  2.00},

@@ -42,7 +42,7 @@ function MobilityWay(props) {
                     styles={{backgroundColor: "blue"}}
                     src={Car}
                     callback={handleOnCLickButton}
-                    id={"car"}
+                    id={"Car"}
                     col={6}
                 />
 

@@ -7,29 +7,56 @@ import { Button, Textfield } from 'react-mdl';
 import logo from '../../../src/logo.svg';
 import bck from '../../../src/homeBackground.jpg';
 import { Link } from "react-router-dom";
+import UsersService from "../../services/UsersService";
+
 
 function Login() {
+    let email = "", password = "";
+
+    let [error, setError] = React.useState(false);
+
+    async function checkUserConnection() {
+        console.log(" " +email + password);
+        let response = await UsersService.getUserByEmailAndPassword(email, password);
+        console.log(response.data);
+
+        let user  = response.data[0];
+
+        if (user && user.id) {
+            localStorage.setItem("userId", user.id);
+            window.location.assign("/account");
+        } else {
+            setError(true);
+        }
+
+    }
+
+
+
   return (
 
     <div  className="App-body" style={{ flexDirection: 'column', display: 'flex', backgroundImage: `url(${bck})`, backgroundSize: 'cover' }}>
-    <img src={logo} className="App-logo" alt="logo" />                  
+    <img src={logo} className="App-logo" alt="logo" />
          <Textfield
-          onChange={() => { }}
+          onBlur={(e) => { email = e.target.value}}
           label="Email"
           floatingLabel
           style={{ width: '200px' }}
         />
 
         <Textfield
-          onChange={() => { }}
+          onBlur={(e) => { password = e.target.value}}
           label="Mot de passe"
           floatingLabel
           style={{ width: '200px' }}
         />    
-
-        <Button  style={{ backgroundColor: 'white' }}      
-        >         
-          <Link to="/app">Login</Link>
+        {error && <p style={{color: "red"}}>Invalid password or email</p>}
+        <Button
+            style={{ backgroundColor: 'white' }}
+            onClick={checkUserConnection}
+        >
+            Login
+          {/*<Link to="/app">Login</Link>*/}
         </Button>
 
   </div>      
