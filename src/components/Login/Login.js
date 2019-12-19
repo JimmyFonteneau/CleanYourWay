@@ -40,6 +40,8 @@ function Login() {
          <Textfield
           onBlur={(e) => { email = e.target.value}}
           label="Email"
+          pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+          error="Le format d'email n'est pas valide"
           floatingLabel
           style={{ width: '200px' }}
         />
