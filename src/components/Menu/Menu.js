@@ -17,7 +17,7 @@ class Menu extends React.Component {
 
             <div style={{height: '100vh', position: 'relative'}}>
                 <Layout fixedDrawer>
-                    <Drawer title="Title">
+                    <Drawer title="Menu">
                         <Navigation>
                           <a onClick={() => {
                               this.hideToggle();
@@ -25,6 +25,7 @@ class Menu extends React.Component {
                           }}>Account</a>
                           <Link to="/savings" onClick={() => this.hideToggle()}>Mes économies</Link>
                           <Link to="/challenges" onClick={() => this.hideToggle()}>Challenges</Link>
+                          <Link to="/classement" onClick={() => this.hideToggle()}>Classement</Link>
                         </Navigation>
                     </Drawer>
 
