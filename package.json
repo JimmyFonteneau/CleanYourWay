@@ -17,11 +17,12 @@
     "react-scripts": "3.3.0"
   },
   "scripts": {
-    "start": "json-server --watch json/db.json --port 3004 | react-scripts start ",
+    "start": "json-server --watch json/db.json --port 3004 | react-scripts start",
     "json-server": "json-server --watch json/db.json --port 3004",
-    "build": "react-scripts build",
+    "build": "json-server --watch json/db.json --port 3004 | react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "mybuild": "json-server --watch json/db.json --port 3004 | npm install -g serve | serve -s build -l 8080"
   },
   "eslintConfig": {
     "extends": "react-app"
