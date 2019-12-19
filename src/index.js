@@ -15,7 +15,6 @@ const routing = (
     <Router>
         <div>
         <Switch>
-<<<<<<< HEAD
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />                 
           <Menu>          
@@ -24,16 +23,6 @@ const routing = (
           </Menu>
           {/* <Route component={Notfound} />  */}
         </Switch>
-=======
-        <Route exact path="/" component={Home} />
-        <Route exact path="/login" component={Login} />
-            <Menu>
-            <Route exact path="/app" component={App} />
-            <Route exact path="/savings" component={Savings} />
-            <Route component={Notfound} />
-            </Menu>
-            </Switch>
->>>>>>> 521241f89ceeae03327b1bdf0f16f9fa7440ef6d
         </div>
     </Router>
 );
