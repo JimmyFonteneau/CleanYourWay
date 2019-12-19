@@ -1,0 +1,12 @@
+.mapouter {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 60vh;
+    width: 80vw;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+}
+
