@@ -8,7 +8,7 @@ import 'react-mdl/extra/material.js';
 function Savings() {
   return (
 
-    <div  className="App-body" style={{ flexDirection: 'column', display: 'flex'}}>
+    <div  className="savings" style={{ display: 'flex', paddingTop: '50px', flexDirection: 'column' }}>
     <p>Mes économies</p>
     <p> Aujourd'hui : 2 euros</p>
     <p> Ce mois-ci : 10 euros</p>

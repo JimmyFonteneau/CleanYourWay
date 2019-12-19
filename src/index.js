@@ -10,6 +10,7 @@ import Login from './components/Login/Login';
 import Savings from './components/Savings/Savings';
 import Notfound from './components/NotFound/NotFound';
 import Account from './components/Account/Account';
+import Challenges from './components/Challenges/Challenges';
 
 const routing = (
     <Router>
@@ -19,7 +20,8 @@ const routing = (
           <Route exact path="/login" component={Login} />                 
           <Menu>          
             <Route exact path="/savings" component={Savings} /> 
-            <Route exact path="/account" component={Account} />                                                     
+            <Route exact path="/account" component={Account} />
+            <Route exact path="/challenges" component={Challenges} />                                                     
           </Menu>
           {/* <Route component={Notfound} />  */}
         </Switch>
