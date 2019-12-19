@@ -2,10 +2,7 @@ import React from 'react';
 
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
-import {Icon, Tab, Tabs} from "react-mdl";
-import { Button, Textfield } from 'react-mdl';
-import logo from '../../../src/logo.svg';
-import bck from '../../../src/homeBackground.jpg';
+
 
 
 function Savings() {

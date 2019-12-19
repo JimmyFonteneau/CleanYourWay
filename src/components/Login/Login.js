@@ -5,13 +5,13 @@ import 'react-mdl/extra/material.js';
 import {Icon, Tab, Tabs} from "react-mdl";
 import { Button, Textfield } from 'react-mdl';
 import logo from '../../../src/logo.svg';
-import bck from '../../../src/homeBackground.jpg';
+import flou from '../../../src/flou.jpg';
 import { Link } from "react-router-dom";
 
 function Login() {
   return (
 
-    <div  className="App-body" style={{ flexDirection: 'column', display: 'flex', backgroundImage: `url(${bck})`, backgroundSize: 'cover' }}>
+    <div  className="App-body" style={{ flexDirection: 'column', display: 'flex', backgroundImage: `url(${flou})`, backgroundSize: 'cover' }}>
     <img src={logo} className="App-logo" alt="logo" />                  
          <Textfield
           onChange={() => { }}
@@ -29,7 +29,7 @@ function Login() {
 
         <Button  style={{ backgroundColor: 'white' }}      
         >         
-          <Link to="/app">Login</Link>
+          <Link to="/account">Login</Link>
         </Button>
 
   </div>      

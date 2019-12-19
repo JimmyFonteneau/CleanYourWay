@@ -21,6 +21,7 @@ class Menu extends React.Component {
                 <Layout fixedDrawer>            
                     <Drawer title="Title">
                         <Navigation>
+                        <Link to="/account" onClick={() => this.hideToggle()}>Account</Link>
                         <Link to="/savings" onClick={() => this.hideToggle()}>Mes économies</Link>
                         </Navigation>
                     </Drawer>
