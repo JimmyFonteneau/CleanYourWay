@@ -1,7 +1,7 @@
 const axios = require('axios');
-
+/*https://3004-dot-7073245-dot-devshell.appspot.com/*/
 const instance = axios.create({
-    baseURL: process.env.NODE_ENV === 'development' ? "http://localhost:3004/" : "https://3004-dot-7073245-dot-devshell.appspot.com/",
+    baseURL: process.env.NODE_ENV === 'development' ? "http://localhost:3004/" : "https://cleanmyway.appspot.com:3004/",
     timeout: 1000,
 });
 
