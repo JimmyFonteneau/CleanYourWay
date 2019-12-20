@@ -5,6 +5,7 @@ import 'react-mdl/extra/material.js';
 import {Icon, Tab, Tabs} from "react-mdl";
 import { Button, Textfield } from 'react-mdl';
 import logo from '../../../src/logo.svg';
+import cywl from '../../../src/cywl.png';
 import flou from '../../../src/flou.jpg';
 import { Link } from "react-router-dom";
 import UsersService from "../../services/UsersService";
@@ -35,8 +36,8 @@ function Login() {
 
   return (
 
-    <div  className="App-body" style={{ flexDirection: 'column', display: 'flex', backgroundImage: `url(${flou})`, backgroundSize: 'cover' }}>
-    <img src={logo} className="App-logo" alt="logo" />                  
+    <div  className="App-body" style={{ paddingTop: '20vh', flexDirection: 'column', display: 'flex', backgroundImage: `url(${flou})`, backgroundSize: 'cover' }}>
+    <img src={cywl} className="App-logo" alt="logo" />                  
          <Textfield
           onBlur={(e) => { email = e.target.value}}
           label="Email"
@@ -58,7 +59,7 @@ function Login() {
             style={{ backgroundColor: 'white' }}
             onClick={checkUserConnection}
         >
-            Login
+            Valider
           {/*<Link to="/app">Login</Link>*/}
         </Button>
 
