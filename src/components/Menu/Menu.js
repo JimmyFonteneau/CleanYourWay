@@ -27,6 +27,7 @@ class Menu extends React.Component {
                             <Link to="/challenges" onClick={() => this.hideToggle()}>Challenges</Link>
                             <Link to="/classement" onClick={() => this.hideToggle()}>Classement</Link>
                             <Link to="/parametres" onClick={() => this.hideToggle()}>Paramètres</Link>
+                            <a href="https://xd.adobe.com/view/f57ea2ad-103c-4042-46fd-dde220c1b56b-834f/" target={"blank"}><i>Maquette</i></a>
 
                         </Navigation>
                     </Drawer>
