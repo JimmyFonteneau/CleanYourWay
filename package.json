@@ -19,7 +19,7 @@
   "scripts": {
     "start": "json-server --watch json/db.json --port 3004 | react-scripts start",
     "json-server": "json-server --watch json/db.json --port 3004",
-    "build": "react-scripts build",
+    "build": "json-server --watch json/db.json --port 3004 | react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "mybuild": "npm install | json-server --watch json/db.json --port 3004 | npm install -g serve | serve -s build"
