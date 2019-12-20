@@ -12,6 +12,7 @@ import Notfound from './components/NotFound/NotFound';
 import Account from './components/Account/Account';
 import Challenges from './components/Challenges/Challenges';
 import Classement from './components/Classement/Classement';
+import Parametres from "./components/Parametres/Parametres";
 
 const routing = (
     <Router>
@@ -24,6 +25,7 @@ const routing = (
             <Route exact path="/account" component={Account} />
             <Route exact path="/challenges" component={Challenges} /> 
             <Route exact path="/classement" component={Classement} />                                                     
+            <Route exact path="/parametres" component={Parametres} />
           </Menu>
           {/* <Route component={Notfound} />  */}
         </Switch>

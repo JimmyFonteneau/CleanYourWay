@@ -3,7 +3,7 @@ import React from 'react';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import {Content, Drawer, Header, Layout, Navigation} from "react-mdl";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 class Menu extends React.Component {
 
@@ -19,17 +19,19 @@ class Menu extends React.Component {
                 <Layout fixedDrawer>
                     <Drawer title="Menu">
                         <Navigation>
-                          <a onClick={() => {
-                              this.hideToggle();
-                              window.location.assign("/account");
-                          }}>Account</a>
-                          <Link to="/savings" onClick={() => this.hideToggle()}>Mes économies</Link>
-                          <Link to="/challenges" onClick={() => this.hideToggle()}>Challenges</Link>
-                          <Link to="/classement" onClick={() => this.hideToggle()}>Classement</Link>
+                            <a onClick={() => {
+                                this.hideToggle();
+                                window.location.assign("/account");
+                            }}>Accueil</a>
+                            <Link to="/savings" onClick={() => this.hideToggle()}>Mes économies</Link>
+                            <Link to="/challenges" onClick={() => this.hideToggle()}>Challenges</Link>
+                            <Link to="/classement" onClick={() => this.hideToggle()}>Classement</Link>
+                            <Link to="/parametres" onClick={() => this.hideToggle()}>Paramètres</Link>
+
                         </Navigation>
                     </Drawer>
 
-                    <Content>                     
+                    <Content>
                         {this.props.children}
                     </Content>
                 </Layout>
