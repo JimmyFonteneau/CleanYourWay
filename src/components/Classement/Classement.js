@@ -8,8 +8,8 @@ function Classement() {
     return (
 
         <div className="classement"
-             style={{display: 'flex', paddingTop: '50px', flexDirection: 'column', alignItems: 'center'}}>
-            <p style={{backgroundColor: '#77C689', borderRadius: '15px'}}>Classement</p>
+             style={{display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '20vh'}}>
+            <p style={{backgroundColor: '#77C689', borderRadius: '15px', padding: '10px'}}>Classement</p>
             <div style={{display: 'flex', width: '100%', justifyContent: 'space-around'}}>
                 <p> Le premier </p> <p>Didier</p>
             </div>

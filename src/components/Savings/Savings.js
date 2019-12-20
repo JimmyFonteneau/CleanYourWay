@@ -8,8 +8,8 @@ import 'react-mdl/extra/material.js';
 function Savings() {
   return (
 
-    <div  className="savings" style={{ display: 'flex', paddingTop: '50px', flexDirection: 'column', alignItems: 'center' }}>
-    <p style={{ backgroundColor: '#77C689', borderRadius: '15px' }}>Mes économies</p>
+    <div  className="savings" style={{ display: 'flex', paddingTop: '20vh', flexDirection: 'column', alignItems: 'center' }}>
+    <p style={{ backgroundColor: '#77C689', borderRadius: '15px', padding: '10px' }}>Mes économies</p>
     <div style={{ display: 'flex', width: '100%', justifyContent: 'space-around' }}> 
       <p> Aujourd'hui :</p> <p>2€</p>  
     </div>    
