@@ -52,7 +52,7 @@ function Login() {
           floatingLabel
           style={{ width: '200px' }}
         />    
-        {error && <p style={{color: "red"}}>Invalid password or email</p>}
+        {error && <p style={{color: "red"}}>Mot de passe ou email incorrect</p>}
         <Button
             style={{ backgroundColor: 'white' }}
             onClick={checkUserConnection}

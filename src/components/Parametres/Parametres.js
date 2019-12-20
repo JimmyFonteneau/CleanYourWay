@@ -3,12 +3,12 @@ import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 
 
-function Challenges() {
+function Parametres() {
   return (
 
       <div className="Account"
            style={{display: 'flex', paddingTop: '50px', flexDirection: 'column', alignItems: 'center'}}>
-          <p style={{backgroundColor: '#77C689', borderRadius: '15px'}}>Challenges</p>
+          <p>Yan</p>
           <div style={{display: 'flex', width: '100%', justifyContent: 'space-around', textAlign: "center", marginTop: "20px"}}>
               <div>
                   <p style={{padding: "8px", marginBottom: "0", backgroundColor: "lightblue", borderRadius: "50px"}}> Prendre le bus 5 fois cette semaine </p>
@@ -31,4 +31,4 @@ function Challenges() {
   );
 }
 
-export default Challenges;
+export default Parametres;
