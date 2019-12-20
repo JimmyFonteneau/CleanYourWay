@@ -29,11 +29,11 @@ const infoStyles = {
 
 class MapOverview extends React.Component {
 
-    loadUser = (id) => {
-        UsersService.getUser(id).then(
-            res => this.setState({user: res.data})
-        );
-    };
+    // loadUser = (id) => {
+    //     UsersService.getUser(id).then(
+    //         res => this.setState({user: res.data})
+    //     );
+    // };
 
     constructor(props) {
         super(props);
@@ -59,10 +59,15 @@ class MapOverview extends React.Component {
 
         }
         this.state = {
-            user: {}
+            user: {
+                'address': {
+                    home: 'Adresse de yann',
+                    work: 'Urban adresse',
+                }
+            }
         };
 
-        this.loadUser(localStorage.getItem("userId"));
+        //this.loadUser(localStorage.getItem("userId"));
 
     }
 

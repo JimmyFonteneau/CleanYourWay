@@ -17,18 +17,20 @@ function Login() {
     let [error, setError] = React.useState(false);
 
     async function checkUserConnection() {
-        console.log(" " +email + password);
-        let response = await UsersService.getUserByEmailAndPassword(email, password);
-        console.log(response.data);
+        // console.log(" " +email + password);
+        // let response = await UsersService.getUserByEmailAndPassword(email, password);
+        // console.log(response.data);
 
-        let user  = response.data[0];
+        // let user  = response.data[0];
 
-        if (user && user.id) {
-            localStorage.setItem("userId", user.id);
-            window.location.assign("/account");
-        } else {
-            setError(true);
-        }
+        // if (user && user.id) {
+        //     localStorage.setItem("userId", user.id);
+        //     window.location.assign("/account");
+        // } else {
+        //     setError(true);
+        // }
+        localStorage.setItem("userId", "1");
+        window.location.assign("/account");
 
     }
 
