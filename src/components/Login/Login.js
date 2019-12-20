@@ -47,6 +47,7 @@ function Login() {
         />
 
         <Textfield
+            type={"password"}
           onBlur={(e) => { password = e.target.value}}
           label="Mot de passe"
           floatingLabel

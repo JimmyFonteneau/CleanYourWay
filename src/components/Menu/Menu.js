@@ -22,7 +22,7 @@ class Menu extends React.Component {
                             <a onClick={() => {
                                 this.hideToggle();
                                 window.location.assign("/account");
-                            }}>Account</a>
+                            }}>Accueil</a>
                             <Link to="/savings" onClick={() => this.hideToggle()}>Mes économies</Link>
                             <Link to="/challenges" onClick={() => this.hideToggle()}>Challenges</Link>
                             <Link to="/classement" onClick={() => this.hideToggle()}>Classement</Link>
