@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "mybuild": "json-server --watch json/db.json --port 3004 | npm install -g serve | serve -s build -l 8080"
+    "mybuild": "npm install | json-server --watch json/db.json --port 3004 | npm install -g serve | serve -s build"
   },
   "eslintConfig": {
     "extends": "react-app"
