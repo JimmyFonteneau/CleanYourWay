@@ -14,7 +14,8 @@ class Account extends React.Component {
   constructor(props) {
     super(props);  
     this.state = { 
-      openMap: false,       
+      openMap: false,
+      mobilityId: null       
     };
     //this.updateOpenIsRendered = this.updateOpenIsRendered.bind(this);
    }
@@ -24,19 +25,20 @@ class Account extends React.Component {
 
   //  }
 
-  componentDidUpdate() {
-    console.error('component didmount');
+  onClickMobility(e) {
+    this.setState({ mobilityId: e.target.id, openMap: true });
   }
 
   render () {
-    const { openMap } = this.state;
+    const { openMap, mobilityId } = this.state;
     
     return (   
       <div>
-        {openMap ? <MapOverview/> : 
+        {openMap ? <MapOverview id={mobilityId}/> : 
          <div className="Account" style={{ display: 'flex', paddingTop: '12vh', flexDirection: 'column' }}>      
-         <div>
-         <img src={user} style={{ width: '15vw' }}/> 
+         <div style={{ display: 'flex', alignItems: 'flex-end' }}>
+         <img src={user} style={{ width: '15vw', paddingLeft: '9vw' }}/> 
+         <p style={{ paddingLeft: '5vw' }}>Le super utilisateur</p>
          </div>
          <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '5vh' }}>
          <Button 
@@ -64,21 +66,29 @@ class Account extends React.Component {
         <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
         <div 
             style={{ border: '1px solid #4CAF50', backgroundColor: 'white', borderRadius: '15px', width: '50%', textAlign: 'center', marginTop: '3vh' }}            
+            id='Walk'
+            onClick={(e) => this.onClickMobility(e)}
         >         
             A pied  
         </div> 
         <div 
             style={{ border: '1px solid #4CAF50', backgroundColor: 'white', borderRadius: '15px', width: '50%', textAlign: 'center', marginTop: '3vh' }}             
+            id='Bicycle'
+            onClick={(e) => this.onClickMobility(e)}
         >         
             Vélo 
         </div> 
         <div 
             style={{ border: '1px solid #4CAF50', backgroundColor: 'white', borderRadius: '15px', width: '50%', textAlign: 'center', marginTop: '3vh' }}             
+            id='Car'
+            onClick={(e) => this.onClickMobility(e)}
         >         
             Voiture 
         </div> 
         <div 
             style={{ border: '1px solid #4CAF50', backgroundColor: 'white', borderRadius: '15px', width: '50%', textAlign: 'center', marginTop: '3vh' }}             
+            id='Bus'
+            onClick={(e) => this.onClickMobility(e)}
         >         
             Bus 
         </div> 
