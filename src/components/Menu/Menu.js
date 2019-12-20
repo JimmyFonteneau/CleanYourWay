@@ -17,11 +17,15 @@ class Menu extends React.Component {
 
             <div style={{height: '100vh', position: 'relative'}}>
                 <Layout fixedDrawer>
-                    <Drawer title="Title">
+                    <Drawer title="Menu">
                         <Navigation>
-                          <Link to="/account" onClick={() => this.hideToggle()}>Account</Link>
+                          <a onClick={() => {
+                              this.hideToggle();
+                              window.location.assign("/account");
+                          }}>Account</a>
                           <Link to="/savings" onClick={() => this.hideToggle()}>Mes économies</Link>
                           <Link to="/challenges" onClick={() => this.hideToggle()}>Challenges</Link>
+                          <Link to="/classement" onClick={() => this.hideToggle()}>Classement</Link>
                         </Navigation>
                     </Drawer>
 

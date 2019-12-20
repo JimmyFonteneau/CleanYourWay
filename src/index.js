@@ -11,6 +11,7 @@ import Savings from './components/Savings/Savings';
 import Notfound from './components/NotFound/NotFound';
 import Account from './components/Account/Account';
 import Challenges from './components/Challenges/Challenges';
+import Classement from './components/Classement/Classement';
 
 const routing = (
     <Router>
@@ -21,7 +22,8 @@ const routing = (
           <Menu>          
             <Route exact path="/savings" component={Savings} /> 
             <Route exact path="/account" component={Account} />
-            <Route exact path="/challenges" component={Challenges} />                                                     
+            <Route exact path="/challenges" component={Challenges} /> 
+            <Route exact path="/classement" component={Classement} />                                                     
           </Menu>
           {/* <Route component={Notfound} />  */}
         </Switch>
