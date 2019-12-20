@@ -7,8 +7,8 @@ function Challenges() {
   return (
 
       <div className="Account"
-           style={{display: 'flex', paddingTop: '50px', flexDirection: 'column', alignItems: 'center'}}>
-          <p style={{backgroundColor: '#77C689', borderRadius: '15px'}}>Challenges</p>
+           style={{display: 'flex', paddingTop: '20vh', flexDirection: 'column', alignItems: 'center'}}>
+          <p style={{backgroundColor: '#77C689', borderRadius: '15px', padding: '10px'}}>Challenges</p>
           <div style={{display: 'flex', width: '100%', justifyContent: 'space-around', textAlign: "center", marginTop: "20px"}}>
               <div>
                   <p style={{padding: "8px", marginBottom: "0", backgroundColor: "lightblue", borderRadius: "50px"}}> Prendre le bus 5 fois cette semaine </p>
